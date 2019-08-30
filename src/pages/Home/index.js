@@ -12,7 +12,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className='home-box'>
-        <span>欢迎来到学习React系统</span>
+        <span>欢迎来到学习React系统1</span>
       </div>
     );
   }

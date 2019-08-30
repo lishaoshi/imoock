@@ -2,6 +2,7 @@ import React from 'react'
 import './index.less'
 import  { Menu } from 'antd'
 import MenuList from '../../config/menuConfig.js'
+import {NavLink} from 'react-router-dom'
 const { SubMenu } = Menu;
 
 
@@ -20,7 +21,7 @@ export default class LeftMenu extends React.Component {
                     {this.filterMenuList(item.children)}
                 </SubMenu>
             } 
-            return <Menu.Item key={item.key}>{item.title}</Menu.Item>
+            return  <Menu.Item key={item.key}><NavLink to={item.key}>{item.title}</NavLink></Menu.Item>
         })
     }
     componentDidMount() {
