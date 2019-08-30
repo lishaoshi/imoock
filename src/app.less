@@ -1,7 +1,17 @@
+@import './resource/default.less';
+
 .app {
     display: flex;
+    // align-items: flex-start;
+    
     .leftNav {
-        flex:1;
         min-width: 180px;
+        height: calc(100vh);
+        background: #001529;
+    }
+    .right {
+        background: @colorL;
+        flex: 1;
+        overflow: auto;
     }
 }
